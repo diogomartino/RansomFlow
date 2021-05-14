@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ransomflow", "Ransomflow\Ransomflow.csproj", "{F53A3F27-0A53-4AD5-95D9-78C758272E8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dropper", "Dropper\Dropper.csproj", "{9CF907A7-C0F6-46B9-B409-302165960608}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vaccine", "Vaccine\Vaccine.csproj", "{F7A73481-F54B-42B5-B6F0-046A711F440D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F53A3F27-0A53-4AD5-95D9-78C758272E8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F53A3F27-0A53-4AD5-95D9-78C758272E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F53A3F27-0A53-4AD5-95D9-78C758272E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F53A3F27-0A53-4AD5-95D9-78C758272E8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CF907A7-C0F6-46B9-B409-302165960608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CF907A7-C0F6-46B9-B409-302165960608}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CF907A7-C0F6-46B9-B409-302165960608}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CF907A7-C0F6-46B9-B409-302165960608}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7A73481-F54B-42B5-B6F0-046A711F440D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7A73481-F54B-42B5-B6F0-046A711F440D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7A73481-F54B-42B5-B6F0-046A711F440D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7A73481-F54B-42B5-B6F0-046A711F440D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31F5CB16-454E-4E0C-82C9-3238B096826A}
+	EndGlobalSection
+EndGlobal
