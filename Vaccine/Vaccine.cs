@@ -47,7 +47,7 @@ namespace Vaccine
         /// Recursive function that allows the program to go through all the files of a directory even if they are inside a sub-directory
         /// More info: https://stackoverflow.com/a/5181424/4466024
         /// </summary>
-        private static void ProcessDirectory(string targetDirectory) // https://stackoverflow.com/a/5181424/4466024
+        private static void ProcessDirectory(string targetDirectory)
         {
             string[] fileEntries = Directory.GetFiles(targetDirectory);
             foreach (string fileName in fileEntries)
@@ -93,7 +93,7 @@ namespace Vaccine
         /// Decrypts a file using the AES when given the correct password
         /// More info: https://ourcodeworld.com/articles/read/471/how-to-encrypt-and-decrypt-files-using-the-aes-encryption-algorithm-in-c-sharp
         /// </summary>
-        private static void FileDecrypt(string inputFile, string outputFile, string password) // https://ourcodeworld.com/articles/read/471/how-to-encrypt-and-decrypt-files-using-the-aes-encryption-algorithm-in-c-sharp
+        private static void FileDecrypt(string inputFile, string outputFile, string password)
         {
             byte[] passwordBytes = Encoding.UTF8.GetBytes(password);
             byte[] salt = new byte[32];
